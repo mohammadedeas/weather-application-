@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather app</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- search section -->
+        <div class="search-section">
+            <div class="input-wraper">
+                <span class="material-symbols-rounded">
+                    search
+                </span>
+                <input type="search" placeholder="Entetr a city name" class="search-input">
+            </div>
+            <button class="location-button">
+                <span class="material-symbols-rounded">
+                    my_location
+                </span>
+            </button>
+        </div>
+        <!-- weather section -->
+        <div class="weather-section">
+            <div class="no-result">
+                <img src="icons/no-result.svg" class="weather-icon">
+                <h3 class="title">something went wrong </h3>
+                <p class="messege">we are unable to retrive the weather details .
+                    ensure you have entered a valid city or try again later
+                </p>
+            </div>
+            <!-- current weather -->
+            <div class="current-weather ">
+                <img src="icons/clouds.svg" class="weather-icon">
+                <h2 class="tempreture">00<span>°C</span></h2>
+                <P class="description">weather discription</P>
+            </div>
+            <!-- hourly weather forecast list  -->
+            <!-- hourly weather forecast list  -->
+            <div class="hourly-weather">
+                <ul class="weather-list">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
